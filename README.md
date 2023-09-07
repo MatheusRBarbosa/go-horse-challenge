@@ -7,7 +7,12 @@ Para todos que quiserem aprender ou melhorar o seu conhecimento como backend, en
 Durante esse desafio você provavelmente encontrará problemas que vão exigir soluções à altura. Por mais que seja uma brincadeira com caráter de competição, minha recomendação é evitar abrir mão da qualidade/segurança da sua aplicação apenas para ganhar performance, já que o objetivo é aprendizado.
 
 ## Como participar
-Em breve
+Para saber mais detalhes técnicos veja as [instruções](https://github.com/MatheusRBarbosa/go-horse-challenge/blob/main/INSTRUCOES.md). Além disso, estamos aproveitando o mês de outubro para também participarmos do [Hacktoberfest 2023](https://hacktoberfest.com/), acesse o site e configure a sua conta para os seus PRs começarem a contar.
+
+Para participar do Go Horse Challenge junto com o Hacktoberfest, recomendamos que você faça o seguinte:
+1. Faça um fork deste repositório
+2. Ao invés de fazer um commit direto na main, abra uma branch e faça o seu PR da sua nova branch para a main (no seu repo forkado), dessa forma os PRs vão contar para o Hacktoberfest
+3. 
 
 ## Canal de comunicacao
 Em breve
