@@ -12,7 +12,7 @@ Para saber mais detalhes técnicos veja as [instruções](https://github.com/Mat
 Para participar do Go Horse Challenge junto com o Hacktoberfest, recomendamos que você faça o seguinte:
 1. Faça um fork deste repositório
 2. Ao invés de fazer um commit direto na main, abra uma branch e faça o seu PR da sua nova branch para a main (no seu repo forkado), dessa forma os PRs vão contar para o Hacktoberfest
-3. 
+3. Abra um PR para este repositório seguindo as [instruções](https://github.com/MatheusRBarbosa/go-horse-challenge/blob/main/INSTRUCOES.md).
 
 ## Canal de comunicacao
 Em breve
