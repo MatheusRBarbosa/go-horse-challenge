@@ -4,7 +4,7 @@ Para participar, basta criar uma pasta com o seu @ do github dentro de `particip
 2. Um arquivo README.md com o seu nome, github e qualquer outra informação que considere relevante
 3. (OPCIONAL) Qualquer outro arquivo de configuração que seja usado no seu `docker-compose.yml`
 
-# O que ter no docker-compose
+# Docker-compose
 Você pode ter quaisquer serviços no docker-compose, entretanto, ele precisa seguir algumas especificações.
 
 1. Sua API precisa estar exposta para a porta 9999. Pois a máquina de teste possui essa porta configurada
