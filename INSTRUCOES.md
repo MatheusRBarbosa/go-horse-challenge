@@ -1,5 +1,5 @@
 # Instruções para participar
-Para participar, basta criar uma pasta com o seu @ do github dentro de `participantes`. Dentro dessa pasta deve conter:
+Para participar, basta criar PR com uma pasta com o seu @ do github dentro de `participantes`. Dentro dessa pasta deve conter:
 1. Um docker compose para que sua aplicação seja testada (a seguir detalharemos melhor as configurações)
 2. Um arquivo README.md com o seu nome, github e qualquer outra informação que considere relevante
 3. (OPCIONAL) Qualquer outro arquivo de configuração que seja usado no seu `docker-compose.yml`
