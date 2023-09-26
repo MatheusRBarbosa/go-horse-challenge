@@ -28,7 +28,7 @@ services:
       ]
 
   api1:
-    build: .
+    build: <registry publico da sua imagem>
     restart: always
     hostname: api1
     depends_on:
@@ -49,7 +49,7 @@ services:
           memory: "0.5GB"
 
   api2:
-    build: .
+    build: <registry publico da sua imagem>
     restart: always
     hostname: api1
     depends_on:
