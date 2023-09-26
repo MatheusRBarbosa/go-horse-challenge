@@ -1,0 +1,93 @@
+
+version: "3.5"
+services:
+  db:
+    image: postgres:15
+    hostname: db
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: go-horse-challenge
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.7"
+          memory: "1GB"
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+      - ./postgres/:/docker-entrypoint-initdb.d/
+    command:
+      [
+        "postgres",
+        "-c",
+        "config_file=/docker-entrypoint-initdb.d/postgresql.conf",
+      ]
+
+  api1:
+    build: .
+    restart: always
+    hostname: api1
+    depends_on:
+      - db
+    expose:
+      - "8080"
+    environment:
+      - APP_ENV=dev
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=go-horse-challenge
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "0.5GB"
+
+  api2:
+    build: .
+    restart: always
+    hostname: api1
+    depends_on:
+      - db
+    expose:
+      - "8080"
+    environment:
+      - APP_ENV=dev
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=go-horse-challenge
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "0.5GB"
+
+  nginx:
+    image: nginx
+    hostname: api
+    volumes:
+      - ./nginx/:/etc/nginx/
+    depends_on:
+      - api1
+      - api2
+    ports:
+      - "9999:9999"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+          memory: "0.5GB"
+
+volumes:
+  postgres-db:
+
+networks:
+  default:
+    driver: bridge
