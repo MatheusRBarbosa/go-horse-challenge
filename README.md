@@ -15,7 +15,7 @@ Para participar do Go Horse Challenge junto com o Hacktoberfest, recomendamos qu
 3. Abra um PR para este repositório seguindo as [instruções](https://github.com/MatheusRBarbosa/go-horse-challenge/blob/main/INSTRUCOES.md).
 
 ## Canal de comunicação
-_Em breve_
+https://chat.whatsapp.com/BN1AqjbWM9X7FVbSPDKIuh
 
 ## Resultados
 _Em breve_
