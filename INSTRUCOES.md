@@ -12,7 +12,7 @@ Você pode ter quaisquer serviços no docker-compose, entretanto, ele precisa se
 3. As imagens que forem usadas no `docker-compose` (incluindo da sua API), precisam estar disponíveis em um registry público para que a máquina de teste possa fazer o pull corretamente.
 4. Seu banco de dados precisa estar configurado.
 
-Um arquivo de configuração exemplo contendo esses pontos pode ser encontrado em `exemplos/docker-compose.yml`
+Um arquivo de configuração exemplo contendo esses pontos pode ser encontrado em `exemplos/docker/docker-compose.yml`
 
 ## Funcionalidades da API
 Sua API precisa responder aos seguinte endpoints:
@@ -48,5 +48,6 @@ Esse endpoint será usado apenas uma vez ao final do teste para verificar quanto
 ```
 
 ## Teste de carga
-Em breve
+O teste de caraga usado será o mesmo que se encontra em `exemplos/k6/script.js`, usando as mesmas dependências (`chance.min.js` e `languages.min.js`) fique a vontade para usar os mesmos arquivos. Caso encontre algum problema não exite em mandar no canal de comunicação =).
+O script usa a ferramenta [k6](https://k6.io/) para o teste de carga, você pode usar localmente, basta criar uma conta e configurar o CLI. 
 
